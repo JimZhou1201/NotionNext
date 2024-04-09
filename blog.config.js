@@ -16,7 +16,7 @@ const BLOG = {
   // 3.14.1版本后，欢迎语在此配置，英文逗号隔开 ,  即可支持多个欢迎语打字效果。
   GREETING_WORDS:
     process.env.NEXT_PUBLIC_GREETING_WORDS ||
-    '一站式免费AI工具综合网站,⭐亲测评价\\📓使用教程\\🔗直通链接',
+    '一站式免费AI工具综合网站,⭐亲测评价\📓使用教程\🔗直通链接',
 
   CUSTOM_MENU: process.env.NEXT_PUBLIC_CUSTOM_MENU || false, // 支持Menu 类型，从3.12.0版本起，各主题将逐步支持灵活的二级菜单配置，替代了原来的Page类型，此配置是试验功能、默认关闭。
 
@@ -442,7 +442,7 @@ const BLOG = {
   // 网站图片
   IMG_LAZY_LOAD_PLACEHOLDER:
     process.env.NEXT_PUBLIC_IMG_LAZY_LOAD_PLACEHOLDER ||
-    'https://www.freepik.com/free-photo/astronaut-space-suit-with-neon-lights-flag_29018966.htm#fromView=search&page=1&position=1&uuid=3804c0d3-78df-4e55-a3c4-c94993edb9ac', // 懒加载占位图片地址，支持base64或url data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+    '', // 懒加载占位图片地址，支持base64或url data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
   IMG_URL_TYPE: process.env.NEXT_PUBLIC_IMG_TYPE || 'Notion', // 此配置已失效，请勿使用；AMAZON方案不再支持，仅支持Notion方案。 ['Notion','AMAZON'] 站点图片前缀 默认 Notion:(https://notion.so/images/xx) ， AMAZON(https://s3.us-west-2.amazonaws.com/xxx)
   IMG_SHADOW: process.env.NEXT_PUBLIC_IMG_SHADOW || false, // 文章图片是否自动添加阴影
   IMG_COMPRESS_WIDTH: process.env.NEXT_PUBLIC_IMG_COMPRESS_WIDTH || 800, // Notion图片压缩宽度
